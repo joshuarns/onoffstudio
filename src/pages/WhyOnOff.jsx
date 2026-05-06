@@ -18,14 +18,6 @@ export default function WhyOnOff() {
       <section className="project-hero">
         <div className="project-hero__bg img-harmonia-hero" />
         <div className="project-hero__content">
-          <div className="project-hero__meta reveal">
-            {[['Category', 'Lighting & Acoustics'], ['Based in', 'United States'], ['Since', '2020']].map(([label, value]) => (
-              <div key={label} className="project-hero__meta-item">
-                <span className="project-hero__meta-label">{label}</span>
-                <span className="project-hero__meta-value">{value}</span>
-              </div>
-            ))}
-          </div>
           <h1 className="project-hero__title reveal reveal-delay-1">Why onoff<br />studio.</h1>
         </div>
       </section>

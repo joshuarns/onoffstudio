@@ -96,77 +96,77 @@ body {
 .img-warm-light {
   background:
     linear-gradient(160deg, rgba(8,8,7,0.18) 0%, rgba(10,9,9,0.22) 100%),
-    url('assets/img/projects/Harmonia/Kyoko_1.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kyoko_1.png') center/cover no-repeat;
 }
 .img-cool-room {
   background:
     linear-gradient(160deg, rgba(9,12,18,0.22) 0%, rgba(8,11,16,0.28) 100%),
-    url('assets/img/projects/Harmonia/Kaworu_1.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kaworu_1.png') center/cover no-repeat;
 }
 .img-lamp {
   background:
     linear-gradient(180deg, rgba(13,12,9,0.18) 0%, rgba(26,20,9,0.22) 100%),
-    url('assets/img/projects/Harmonia/Urania_2.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Urania_2.png') center/cover no-repeat;
 }
 .img-corridor {
   background:
     linear-gradient(160deg, rgba(14,14,14,0.2) 0%, rgba(10,10,10,0.2) 100%),
-    url('assets/img/projects/Harmonia/Kaworu_2.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kaworu_2.png') center/cover no-repeat;
 }
 .img-pavilion {
   background:
     linear-gradient(150deg, rgba(10,10,9,0.2) 0%, rgba(12,11,9,0.2) 100%),
-    url('assets/img/projects/Harmonia/Harmonia_3.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Harmonia_3.png') center/cover no-repeat;
 }
 .img-chamber {
   background:
     linear-gradient(160deg, rgba(9,9,12,0.2) 0%, rgba(18,18,26,0.2) 100%),
-    url('assets/img/projects/Harmonia/Kaworu_3.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kaworu_3.png') center/cover no-repeat;
 }
 .img-gallery {
   background:
     linear-gradient(135deg, rgba(11,10,8,0.2) 0%, rgba(24,20,16,0.2) 100%),
-    url('assets/img/projects/Harmonia/Kyoko_3.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kyoko_3.png') center/cover no-repeat;
 }
 .img-hotel {
   background:
     linear-gradient(170deg, rgba(12,11,9,0.3) 0%, rgba(26,23,16,0.3) 100%),
-    url('assets/img/projects/Harmonia/Harmonia_2.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Harmonia_2.png') center/cover no-repeat;
 }
 .img-corporate {
   background:
     linear-gradient(160deg, rgba(10,12,16,0.3) 0%, rgba(9,10,12,0.3) 100%),
-    url('assets/img/projects/Harmonia/Kaworu_4.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kaworu_4.png') center/cover no-repeat;
 }
 .img-hero {
   background:
     linear-gradient(160deg, rgba(8,8,7,0.35) 0%, rgba(20,18,16,0.2) 40%, rgba(10,10,9,0.35) 100%),
-    url('assets/img/projects/Harmonia/Harmonia_1.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Harmonia_1.png') center/cover no-repeat;
 }
 .img-harmonia {
   background:
     linear-gradient(160deg, rgba(8,8,7,0.15) 0%, rgba(10,9,9,0.2) 100%),
-    url('assets/img/projects/Harmonia/Harmonia_2.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Harmonia_2.png') center/cover no-repeat;
 }
 .img-kaworu {
   background:
     linear-gradient(160deg, rgba(9,12,18,0.15) 0%, rgba(8,11,16,0.2) 100%),
-    url('assets/img/projects/Harmonia/Kaworu_1.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kaworu_1.png') center/cover no-repeat;
 }
 .img-kyoko {
   background:
     linear-gradient(160deg, rgba(8,8,7,0.15) 0%, rgba(10,9,9,0.2) 100%),
-    url('assets/img/projects/Harmonia/Kyoko_1.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Kyoko_1.png') center/cover no-repeat;
 }
 .img-urania {
   background:
     linear-gradient(160deg, rgba(13,12,9,0.15) 0%, rgba(26,20,9,0.2) 100%),
-    url('assets/img/projects/Harmonia/Urania_2.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Urania_2.png') center/cover no-repeat;
 }
 .img-harmonia-hero {
   background:
     linear-gradient(160deg, rgba(8,8,7,0.4) 0%, rgba(20,18,16,0.2) 40%, rgba(10,10,9,0.4) 100%),
-    url('assets/img/projects/Harmonia/Harmonia_1.png') center/cover no-repeat;
+    url('/assets/img/projects/Harmonia/Harmonia_1.png') center/cover no-repeat;
 }
 
 /* ============================================================

@@ -559,6 +559,9 @@ body {
   border-radius: 2px;
   overflow: hidden;
 }
+.pillars-grid--2col {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .pillar {
   background: var(--bg-2);

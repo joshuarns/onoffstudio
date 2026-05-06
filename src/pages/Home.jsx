@@ -208,7 +208,7 @@ export default function Home() {
               We join the design team early — sound and light are part of the concept, not corrections.
             </p>
           </div>
-          <div className="pillars-grid">
+          <div className="pillars-grid pillars-grid--2col">
             {PROCESS.map((p, i) => (
               <div key={p.n} className={`pillar reveal${i > 0 ? ` reveal-delay-${i}` : ''}`}>
                 <div className="pillar__number">{p.n}</div>

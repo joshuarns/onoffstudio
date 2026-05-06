@@ -118,6 +118,13 @@ export default function Home() {
       {/* SERVICES */}
       <section className="section-services-dual" style={{ padding: 'var(--section-y) 0', borderTop: '1px solid var(--border)' }}>
         <div className="container">
+          <div className="approach-header">
+            <p className="label reveal">Services</p>
+            <h2 className="approach__heading reveal reveal-delay-1">Two disciplines.<br />One solution.</h2>
+            <p className="approach__desc reveal reveal-delay-2">
+              Acoustics and lighting designed together from day one — one specification, one product, one installation.
+            </p>
+          </div>
           <div className="dual-grid">
             <div className="dual-card reveal">
               <p className="label dual-card__label">Acoustics</p>
@@ -170,7 +177,11 @@ export default function Home() {
       <section className="section-range" style={{ padding: 'var(--section-y) 0', borderTop: '1px solid var(--border)' }}>
         <div className="container">
           <div className="approach-header">
-            <h2 className="approach__heading reveal">Four ways to integrate<br />light and sound.</h2>
+            <p className="label reveal">Product Range</p>
+            <h2 className="approach__heading reveal reveal-delay-1">Four ways to integrate<br />light and sound.</h2>
+            <p className="approach__desc reveal reveal-delay-2">
+              Each format resolves the acoustic-lighting integration differently — choose by ceiling type, span, and design intent.
+            </p>
           </div>
           <div className="range-grid">
             {PRODUCTS.map((p, i) => (
@@ -191,8 +202,9 @@ export default function Home() {
       <section className="section-approach" style={{ borderTop: '1px solid var(--border)', background: 'var(--bg-2)' }}>
         <div className="container">
           <div className="approach-header">
-            <h2 className="approach__heading reveal">From concept to installation.</h2>
-            <p className="approach__desc reveal reveal-delay-1">
+            <p className="label reveal">Our Process</p>
+            <h2 className="approach__heading reveal reveal-delay-1">From concept to installation.</h2>
+            <p className="approach__desc reveal reveal-delay-2">
               We join the design team early — sound and light are part of the concept, not corrections.
             </p>
           </div>
@@ -214,6 +226,9 @@ export default function Home() {
           <div className="approach-header">
             <p className="label reveal">Sectors</p>
             <h2 className="approach__heading reveal reveal-delay-1">Spaces where detail<br />defines the experience.</h2>
+            <p className="approach__desc reveal reveal-delay-2">
+              From hospitality to healthcare — every typology where acoustic and lighting quality determines how a space is perceived.
+            </p>
           </div>
           <div className="sectors-grid">
             {SECTORS.map((s, i) => (
@@ -246,6 +261,9 @@ export default function Home() {
           <div className="approach-header">
             <p className="label reveal">Why onoff studio</p>
             <h2 className="approach__heading reveal reveal-delay-1">What no other<br />design firm offers.</h2>
+            <p className="approach__desc reveal reveal-delay-2">
+              We built onoff studio around the gaps that architects and developers hit when specifying acoustics and lighting as separate disciplines.
+            </p>
           </div>
           <div className="why-grid">
             {WHY.map((w, i) => (
@@ -262,8 +280,14 @@ export default function Home() {
       <section className="section-works-teaser">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-header__heading reveal">Selected Works</h2>
-            <Link to="/portfolio" className="section-header__link reveal reveal-delay-1">View all →</Link>
+            <p className="label reveal">Portfolio</p>
+            <div className="section-header__row">
+              <h2 className="section-header__heading reveal reveal-delay-1">Selected Works</h2>
+              <Link to="/portfolio" className="section-header__link reveal reveal-delay-1">View all →</Link>
+            </div>
+            <p className="approach__desc reveal reveal-delay-2">
+              A selection of projects where light and sound were designed as one — from concept to commissioning.
+            </p>
           </div>
           <div className="works-teaser-grid">
             {WORKS.map((w, i) => (

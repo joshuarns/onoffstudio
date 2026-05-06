@@ -101,6 +101,13 @@ export default function Project() {
       {/* GALLERY */}
       <section className="section-gallery">
         <div className="container">
+          <div className="approach-header" style={{ marginBottom: 40 }}>
+            <p className="label reveal">Photography</p>
+            <h2 className="approach__heading reveal reveal-delay-1">Project Gallery.</h2>
+            <p className="approach__desc reveal reveal-delay-2">
+              Documentation of the completed space — light, material, and atmosphere as built.
+            </p>
+          </div>
           <div className="gallery-grid">
             {GALLERY.map((img, i) => (
               <div key={img.src} className={`gallery-item reveal${i > 0 ? ` reveal-delay-${Math.min(i, 2)}` : ''}`}>
@@ -117,8 +124,11 @@ export default function Project() {
       <section className="section-related">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-header__heading reveal">Related Projects</h2>
-            <Link to="/portfolio" className="section-header__link reveal reveal-delay-1">View portfolio →</Link>
+            <p className="label reveal">More Work</p>
+            <div className="section-header__row">
+              <h2 className="section-header__heading reveal reveal-delay-1">Related Projects</h2>
+              <Link to="/portfolio" className="section-header__link reveal reveal-delay-1">View portfolio →</Link>
+            </div>
           </div>
           <div className="related-grid">
             {[['img-kaworu', 'Lighting & Acoustics · 2025', 'Kaworu'], ['img-kyoko', 'Lighting & Acoustics · 2024', 'Kyoko']].map(([img, cat, name]) => (

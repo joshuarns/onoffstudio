@@ -529,11 +529,11 @@ body {
 }
 
 .approach-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   margin-bottom: 72px;
+  max-width: 720px;
 }
 
 .approach__heading {
@@ -601,9 +601,14 @@ body {
 
 .section-header {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+.section-header__row {
+  display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 48px;
   gap: 24px;
 }
 

@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
 
 const PROJECTS = [
-  { img: 'img-harmonia', cat: 'Lighting & Acoustics · 2025', name: 'Harmonia' },
-  { img: 'img-kaworu',   cat: 'Lighting & Acoustics · 2025', name: 'Kaworu' },
-  { img: 'img-kyoko',    cat: 'Lighting & Acoustics · 2024', name: 'Kyoko' },
-  { img: 'img-urania',   cat: 'Lighting & Acoustics · 2024', name: 'Urania' },
+  { img: 'img-harmonia', cat: 'Lighting & Acoustics · 2025', name: 'Harmonia', to: '/harmonia' },
+  { img: 'img-kaworu',   cat: 'Lighting & Acoustics · 2025', name: 'Kaworu',   to: '/kaworu' },
+  { img: 'img-kyoko',    cat: 'Lighting & Acoustics · 2024', name: 'Kyoko',    to: '/kyoko' },
+  { img: 'img-urania',   cat: 'Lighting & Acoustics · 2024', name: 'Urania',   to: '/urania' },
 ]
 
 export default function Portfolio() {
@@ -29,7 +29,7 @@ export default function Portfolio() {
           <div className="portfolio-grid">
             {PROJECTS.map((p, i) => (
               <Link
-                to="/project"
+                to={p.to}
                 key={p.name}
                 className={`portfolio-item reveal${i % 2 === 1 ? ' reveal-delay-1' : ''}`}
               >

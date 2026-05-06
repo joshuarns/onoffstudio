@@ -34,10 +34,10 @@ const WHY = [
 ]
 
 const WORKS = [
-  { img: 'img-harmonia', name: 'Harmonia' },
-  { img: 'img-kaworu',   name: 'Kaworu' },
-  { img: 'img-kyoko',    name: 'Kyoko' },
-  { img: 'img-urania',   name: 'Urania' },
+  { img: 'img-harmonia', name: 'Harmonia', to: '/harmonia' },
+  { img: 'img-kaworu',   name: 'Kaworu',   to: '/kaworu' },
+  { img: 'img-kyoko',    name: 'Kyoko',    to: '/kyoko' },
+  { img: 'img-urania',   name: 'Urania',   to: '/urania' },
 ]
 
 export default function Home() {
@@ -291,7 +291,7 @@ export default function Home() {
           </div>
           <div className="works-teaser-grid">
             {WORKS.map((w, i) => (
-              <Link to="/portfolio" key={w.name} className={`work-card reveal${i > 0 ? ` reveal-delay-${i}` : ''}`}>
+              <Link to={w.to} key={w.name} className={`work-card reveal${i > 0 ? ` reveal-delay-${i}` : ''}`}>
                 <div className={`work-card__img ${w.img}`} />
                 <div className="work-card__overlay">
                   <div className="work-card__cat">Lighting &amp; Acoustics</div>

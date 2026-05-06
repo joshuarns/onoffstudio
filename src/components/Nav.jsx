@@ -24,6 +24,7 @@ export default function Nav() {
         <Link to="/" className="nav__logo">onoff<span>studio</span></Link>
         <div className="nav__links">
           <NavLink to="/portfolio" className={({ isActive }) => 'nav__link' + (isActive ? ' is-active' : '')}>Portfolio</NavLink>
+          <NavLink to="/why" className={({ isActive }) => 'nav__link' + (isActive ? ' is-active' : '')}>Why onoff</NavLink>
           <NavLink to="/propuesta" className={({ isActive }) => 'nav__link' + (isActive ? ' is-active' : '')}>Technical Proposal</NavLink>
         </div>
         <Link to="/#contact" className="nav__cta" onClick={close}>Contact</Link>
@@ -40,6 +41,7 @@ export default function Nav() {
 
       <div className={`nav__mobile${open ? ' is-open' : ''}`} id="nav-mobile">
         <NavLink to="/portfolio" className="nav__link" onClick={close}>Portfolio</NavLink>
+        <NavLink to="/why" className="nav__link" onClick={close}>Why onoff</NavLink>
         <NavLink to="/propuesta" className="nav__link" onClick={close}>Technical Proposal</NavLink>
         <Link to="/#contact" className="nav__cta" onClick={close}>Contact</Link>
       </div>

@@ -6,6 +6,7 @@ export default function Footer() {
       <Link to="/" className="footer__logo">onoff<span>studio</span></Link>
       <nav className="footer__links" aria-label="Footer navigation">
         <Link to="/portfolio" className="footer__link">Portfolio</Link>
+        <Link to="/why" className="footer__link">Why onoff</Link>
         <Link to="/propuesta" className="footer__link">Technical Proposal</Link>
         <Link to="/#contact" className="footer__link">Contact</Link>
       </nav>

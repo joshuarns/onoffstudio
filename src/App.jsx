@@ -9,6 +9,7 @@ import Kaworu from './pages/Kaworu'
 import Kyoko from './pages/Kyoko'
 import Urania from './pages/Urania'
 import Propuesta from './pages/Propuesta'
+import WhyOnOff from './pages/WhyOnOff'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/kyoko" element={<Kyoko />} />
         <Route path="/urania" element={<Urania />} />
         <Route path="/propuesta" element={<Propuesta />} />
+        <Route path="/why" element={<WhyOnOff />} />
       </Routes>
       <Footer />
     </BrowserRouter>

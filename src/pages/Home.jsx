@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import { useReveal } from '../hooks/useReveal'
 
 const PRODUCTS = [
-  { img: 'img-harmonia', nrc: 'NRC 0.90', title: 'Ceiling Panel',     desc: 'Flat or 3D-relief PET panel with recessed or surface LED strip. Ideal for large open spans and hotel lobbies.' },
-  { img: 'img-kaworu',   nrc: 'NRC 0.95', title: 'Suspended Baffle',  desc: 'Hanging blade or fin system. Provides high surface area for absorption while distributing indirect light upward and downward.' },
-  { img: 'img-kyoko',    nrc: 'NRC 0.88', title: 'Ceiling Island',    desc: 'Floating acoustic island in custom shape — circular, organic, geometric. LED perimeter or embedded.' },
-  { img: 'img-urania',   nrc: 'NRC 0.85', title: 'Wall Panel',        desc: 'Mounted panel with integrated backlit or edgelit LED. Resolves lateral reflections and adds ambient lighting layer.' },
+  { img: 'img-ceiling-panel',     nrc: 'NRC 0.90', title: 'Ceiling Panel',     desc: 'Flat or 3D-relief PET panel with recessed or surface LED strip. Ideal for large open spans and hotel lobbies.' },
+  { img: 'img-suspended-baffle', nrc: 'NRC 0.95', title: 'Suspended Baffle',  desc: 'Hanging blade or fin system. Provides high surface area for absorption while distributing indirect light upward and downward.' },
+  { img: 'img-ceiling-island',   nrc: 'NRC 0.88', title: 'Ceiling Island',    desc: 'Floating acoustic island in custom shape — circular, organic, geometric. LED perimeter or embedded.' },
+  { img: 'img-wall-panel',       nrc: 'NRC 0.85', title: 'Wall Panel',        desc: 'Mounted panel with integrated backlit or edgelit LED. Resolves lateral reflections and adds ambient lighting layer.' },
 ]
 
 const PROCESS = [
@@ -309,7 +309,7 @@ export default function Home() {
           <h2 className="cta__heading reveal">
             If you're working on a project where acoustics and lighting are part of the experience — not an afterthought — let's talk from the design stage.
           </h2>
-          <Link to="/propuesta" className="cta__btn reveal reveal-delay-1">
+          <Link to="/contact" className="cta__btn reveal reveal-delay-1">
             Let's design together <span className="cta__btn-arrow">→</span>
           </Link>
         </div>

@@ -8,7 +8,7 @@ import Harmonia from './pages/Harmonia'
 import Kaworu from './pages/Kaworu'
 import Kyoko from './pages/Kyoko'
 import Urania from './pages/Urania'
-import Propuesta from './pages/Propuesta'
+import Contact from './pages/Contact'
 import WhyOnOff from './pages/WhyOnOff'
 
 export default function App() {
@@ -23,7 +23,7 @@ export default function App() {
         <Route path="/kaworu" element={<Kaworu />} />
         <Route path="/kyoko" element={<Kyoko />} />
         <Route path="/urania" element={<Urania />} />
-        <Route path="/propuesta" element={<Propuesta />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/why" element={<WhyOnOff />} />
       </Routes>
       <Footer />

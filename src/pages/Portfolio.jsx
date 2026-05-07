@@ -49,7 +49,7 @@ export default function Portfolio() {
           <p className="portfolio-cta__text reveal">
             Every technical decision should contribute to beauty, comfort, and performance.
           </p>
-          <Link to="/propuesta" className="cta__btn reveal reveal-delay-1">
+          <Link to="/contact" className="cta__btn reveal reveal-delay-1">
             Get in touch <span className="cta__btn-arrow">→</span>
           </Link>
         </div>

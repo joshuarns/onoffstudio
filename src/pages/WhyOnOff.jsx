@@ -43,15 +43,6 @@ export default function WhyOnOff() {
         </div>
       </section>
 
-      {/* IMAGE */}
-      <section style={{ borderBottom: '1px solid var(--border)' }}>
-        <img
-          src="/assets/img/a171c8fe-92b1-4b01-b439-e14632d4d4eb.jpg"
-          alt="onoff studio — acoustic lighting panel"
-          loading="lazy"
-          style={{ width: '100%', display: 'block' }}
-        />
-      </section>
     </>
   )
 }

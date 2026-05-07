@@ -16,7 +16,7 @@ export default function WhyOnOff() {
     <>
       {/* HERO */}
       <section className="project-hero">
-        <div className="project-hero__bg img-harmonia-hero" />
+        <div className="project-hero__bg img-why-hero" />
         <div className="project-hero__content">
           <h1 className="project-hero__title reveal reveal-delay-1">Why onoff<br />studio.</h1>
         </div>
@@ -46,7 +46,7 @@ export default function WhyOnOff() {
       {/* IMAGE */}
       <section style={{ borderBottom: '1px solid var(--border)' }}>
         <img
-          src="/assets/img/projects/Harmonia/Harmonia_3.png"
+          src="/assets/img/a171c8fe-92b1-4b01-b439-e14632d4d4eb.jpg"
           alt="onoff studio — acoustic lighting panel"
           loading="lazy"
           style={{ width: '100%', display: 'block' }}

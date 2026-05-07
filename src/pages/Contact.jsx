@@ -22,6 +22,15 @@ export default function Contact() {
         </div>
       </header>
 
+      <section style={{ borderBottom: '1px solid var(--border)' }}>
+        <img
+          src="/assets/img/7bec58bd-ff03-436d-97d5-4052f329d2d2.jpg"
+          alt="onoff studio — acoustic corridor"
+          loading="lazy"
+          style={{ width: '100%', display: 'block', maxHeight: '60vh', objectFit: 'cover' }}
+        />
+      </section>
+
       <section className="section-contact" id="contact">
         <div className="container">
           <div className="contact-grid">

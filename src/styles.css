@@ -141,7 +141,12 @@ body {
 .img-hero {
   background:
     linear-gradient(160deg, rgba(8,8,7,0.35) 0%, rgba(20,18,16,0.2) 40%, rgba(10,10,9,0.35) 100%),
-    url('/assets/img/projects/Harmonia/Harmonia_1.png') center/cover no-repeat;
+    url('/assets/img/70429e21-b4ce-4062-8a49-ef9dbe1b17d0.jpg') center/cover no-repeat;
+}
+.img-why-hero {
+  background:
+    linear-gradient(160deg, rgba(8,8,7,0.4) 0%, rgba(20,18,16,0.2) 40%, rgba(10,10,9,0.4) 100%),
+    url('/assets/img/f49c3e93-58d3-4954-a07b-30719d7f6c9d.jpg') center/cover no-repeat;
 }
 .img-harmonia {
   background:

@@ -75,7 +75,7 @@ export default function Home() {
               </p>
             </div>
             <div className="intro__image reveal reveal-delay-1">
-              <img src="/assets/img/projects/Harmonia/Kyoko_2.png" alt="onoff studio acoustic lighting interior" loading="lazy" />
+              <img src="/assets/img/7692b69d-b804-48f0-8935-39ff6373032f.jpg" alt="onoff studio acoustic lighting interior" loading="lazy" />
             </div>
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function Home() {
         <div className="container">
           <div className="product-grid">
             <div className="product-img reveal">
-              <img src="/assets/img/projects/Harmonia/Harmonia_3.png" alt="Acoustic lighting panel" loading="lazy" />
+              <img src="/assets/img/2baf20f8-6b81-47e1-9f65-6cfa853be576.jpg" alt="Acoustic lighting panel" loading="lazy" />
             </div>
             <div className="product-info">
               <p className="label reveal">Signature Product</p>

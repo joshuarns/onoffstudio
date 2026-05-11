@@ -193,45 +193,62 @@ export default function Home() {
       </section>
 
       {/* ── 03  ONE ELEMENT. TWO FUNCTIONS. ── */}
-      <section style={{ padding: '72px 48px', borderTop: `1px solid ${BORDER}` }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 32 }}>
+      <section style={{ borderTop: `1px solid ${BORDER}`, overflow: 'hidden' }}>
+
+        {/* full-width top bar */}
+        <div style={{
+          display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+          padding: '36px 48px 0',
+        }}>
           {sectionNum('03')}
           <span style={{ fontFamily: TMR, fontWeight: 600, fontSize: '0.62rem', letterSpacing: '0.2em', color: INK, opacity: 0.5 }}>
             SIGNATURE PRODUCT
           </span>
         </div>
 
-        <h2 style={{
-          fontFamily: BEBAS, fontWeight: 400,
-          fontSize: 'clamp(48px, 6vw, 96px)',
-          lineHeight: 0.88, letterSpacing: '0.02em',
-          textTransform: 'uppercase',
-          margin: '0 0 56px',
-        }}>
-          ONE ELEMENT.<br />
-          <span style={{ color: BROWN }}>TWO FUNCTIONS.</span>
-        </h2>
+        {/* body: specs column | heading + image */}
+        <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', alignItems: 'start' }}>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '190px 1fr', gap: 64, alignItems: 'start' }}>
-          {/* specs */}
-          <div>
+          {/* LEFT — specs as 2-column table */}
+          <div style={{ padding: '48px 24px 64px 48px', alignSelf: 'center' }}>
             {SPECS.map(([k, v]) => (
-              <div key={k} style={{ borderTop: `1px solid ${BORDER}`, padding: '12px 0' }}>
-                <div style={{ fontFamily: TMR, fontSize: '0.55rem', letterSpacing: '0.16em', opacity: 0.38, marginBottom: 4 }}>{k}</div>
-                <div style={{ fontFamily: POP, fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.02em' }}>{v}</div>
+              <div key={k} style={{
+                display: 'grid', gridTemplateColumns: '1fr 1fr',
+                gap: 8,
+                borderTop: `1px solid ${BORDER}`,
+                padding: '10px 0',
+                alignItems: 'center',
+              }}>
+                <span style={{ fontFamily: TMR, fontSize: '0.52rem', letterSpacing: '0.16em', opacity: 0.38, textTransform: 'uppercase' }}>{k}</span>
+                <span style={{ fontFamily: POP, fontSize: '0.7rem', fontWeight: 500, letterSpacing: '0.01em', textAlign: 'right' }}>{v}</span>
               </div>
             ))}
           </div>
 
-          {/* product image */}
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {/* RIGHT — heading + full-bleed image */}
+          <div style={{ paddingBottom: 72 }}>
+            <h2 style={{
+              fontFamily: BEBAS, fontWeight: 400,
+              fontSize: 'clamp(56px, 7.5vw, 114px)',
+              lineHeight: 0.88, letterSpacing: '0.02em',
+              textTransform: 'uppercase',
+              margin: 0,
+              padding: '48px 48px 32px 0',
+              color: INK,
+              textAlign: 'left',
+            }}>
+              ONE ELEMENT.<br />
+              TWO FUNCTIONS.
+            </h2>
+
             <img
               src="/assets/img/panel-acustico.png"
               alt="Acoustic lighting panel"
               loading="lazy"
-              style={{ width: '100%', maxWidth: 560, display: 'block', objectFit: 'contain' }}
+              style={{ width: '100%', display: 'block' }}
             />
           </div>
+
         </div>
       </section>
 

@@ -9,10 +9,10 @@ const TMR    = '"Tomorrow", sans-serif'
 const POP    = '"Poppins", sans-serif'
 
 const PROJECTS = [
-  { img: '/assets/img/projects/Harmonia/Harmonia_2.png', label: 'HARMONIA', to: '/harmonia' },
-  { img: '/assets/img/projects/Harmonia/Kaworu_1.png',   label: 'KAWORU',   to: '/kaworu'   },
-  { img: '/assets/img/projects/Harmonia/Kyoko_1.png',    label: 'KYOKO',    to: '/kyoko'    },
-  { img: '/assets/img/projects/Harmonia/Urania_2.png',   label: 'URANIA',   to: '/urania'   },
+  { img: '/assets/img/2baf20f8-6b81-47e1-9f65-6cfa853be576.jpg', label: 'HARMONIA', to: '/harmonia' },
+  { img: '/assets/img/7bec58bd-ff03-436d-97d5-4052f329d2d2.jpg', label: 'KAWORU',   to: '/kaworu'   },
+  { img: '/assets/img/7692b69d-b804-48f0-8935-39ff6373032f.jpg', label: 'KYOKO',    to: '/kyoko'    },
+  { img: '/assets/img/70429e21-b4ce-4062-8a49-ef9dbe1b17d0.jpg', label: 'URANIA',   to: '/urania'   },
 ]
 
 const SPECS = [

@@ -40,7 +40,7 @@ export default function Footer() {
           color: INK, opacity: 0.45,
           textTransform: 'uppercase',
         }}>
-          MIAMI, FL — USA
+          NEW YORK
         </span>
 
         <span style={{
@@ -79,20 +79,6 @@ export default function Footer() {
           }}
         >
           INSTAGRAM
-        </a>
-
-        <a
-          href="https://linkedin.com"
-          target="_blank" rel="noopener noreferrer"
-          style={{
-            fontFamily: TMR, fontWeight: 500,
-            fontSize: '0.6rem', letterSpacing: '0.14em',
-            color: INK, opacity: 0.45,
-            textDecoration: 'none',
-            textTransform: 'uppercase',
-          }}
-        >
-          LINKEDIN
         </a>
 
         {/* WhatsApp small */}

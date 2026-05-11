@@ -224,12 +224,12 @@ export default function Home() {
           </div>
 
           {/* product image */}
-          <div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <img
-              src="/assets/img/projects/Harmonia/Harmonia_3.png"
+              src="/assets/img/panel-acustico.png"
               alt="Acoustic lighting panel"
               loading="lazy"
-              style={{ maxWidth: '58%', display: 'block' }}
+              style={{ width: '100%', maxWidth: 560, display: 'block', objectFit: 'contain' }}
             />
           </div>
         </div>

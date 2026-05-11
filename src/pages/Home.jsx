@@ -8,11 +8,11 @@ const BEBAS  = '"Bebas Neue", sans-serif'
 const TMR    = '"Tomorrow", sans-serif'
 const POP    = '"Poppins", sans-serif'
 
-const SPACES = [
-  { img: '/assets/img/2baf20f8-6b81-47e1-9f65-6cfa853be576.jpg', label: 'HOSPITALITY' },
-  { img: '/assets/img/f49c3e93-58d3-4954-a07b-30719d7f6c9d.jpg', label: 'WORKPLACES' },
-  { img: '/assets/img/projects/Harmonia/Harmonia_2.png',          label: 'RESTAURANTS' },
-  { img: '/assets/img/7692b69d-b804-48f0-8935-39ff6373032f.jpg', label: 'WELLNESS' },
+const PROJECTS = [
+  { img: '/assets/img/projects/Harmonia/Harmonia_2.png', label: 'HARMONIA', to: '/harmonia' },
+  { img: '/assets/img/projects/Harmonia/Kaworu_1.png',   label: 'KAWORU',   to: '/kaworu'   },
+  { img: '/assets/img/projects/Harmonia/Kyoko_1.png',    label: 'KYOKO',    to: '/kyoko'    },
+  { img: '/assets/img/projects/Harmonia/Urania_2.png',   label: 'URANIA',   to: '/urania'   },
 ]
 
 const SPECS = [
@@ -172,18 +172,22 @@ export default function Home() {
         </h2>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
-          {SPACES.map(({ img, label }) => (
-            <div key={label}>
+          {PROJECTS.map(({ img, label, to }) => (
+            <Link key={label} to={to} style={{ textDecoration: 'none', color: INK }}>
               <div style={{
                 aspectRatio: '3/4',
                 background: `url('${img}') center/cover`,
                 marginBottom: 14,
                 filter: 'brightness(0.78) sepia(0.08)',
-              }} />
+                transition: 'filter 0.3s ease',
+              }}
+                onMouseEnter={e => e.currentTarget.style.filter = 'brightness(0.9) sepia(0.04)'}
+                onMouseLeave={e => e.currentTarget.style.filter = 'brightness(0.78) sepia(0.08)'}
+              />
               <span style={{ fontFamily: TMR, fontWeight: 600, fontSize: '0.62rem', letterSpacing: '0.2em', color: INK }}>
                 {label}
               </span>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

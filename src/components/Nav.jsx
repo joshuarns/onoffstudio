@@ -42,9 +42,9 @@ export default function Nav() {
         </Link>
 
         {/* Center: ARCHITECTURAL LIGHTING • ACOUSTIC DESIGN */}
-        <div style={{
+        <div className="nav-subtitle" style={{
           position: 'absolute', left: '50%', transform: 'translateX(-50%)',
-          display: 'flex', alignItems: 'center', gap: 10,
+          alignItems: 'center', gap: 10,
           fontFamily: '"Tomorrow", sans-serif', fontWeight: 600,
           fontSize: '0.72rem', letterSpacing: '0.2em', color: INK, opacity: 0.5,
         }}>

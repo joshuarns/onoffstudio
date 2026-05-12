@@ -44,7 +44,7 @@ export default function Home() {
     <div style={{ background: C, color: INK, fontFamily: POP }}>
 
       {/* ── HERO ── */}
-      <section style={{
+      <section className="home-hero" style={{
         minHeight: '100vh',
         display: 'flex', flexDirection: 'column', justifyContent: 'center',
         padding: '100px 48px 80px',
@@ -54,7 +54,7 @@ export default function Home() {
           <h1 style={{
             fontFamily: BEBAS,
             fontWeight: 400,
-            fontSize: 'clamp(72px, 13vw, 180px)',
+            fontSize: 'clamp(56px, 13vw, 180px)',
             lineHeight: 0.88,
             letterSpacing: '0.02em',
             textTransform: 'uppercase',
@@ -108,13 +108,9 @@ export default function Home() {
       </section>
 
       {/* ── 01  SILENCE IS DESIGNED ── */}
-      <section style={{
-        display: 'grid', gridTemplateColumns: '1fr 1fr',
-        minHeight: '65vh',
-        borderTop: `1px solid ${BORDER}`,
-      }}>
-        {/* left: text */}
-        <div style={{
+      <section className="home-grid-01" style={{ borderTop: `1px solid ${BORDER}` }}>
+
+        <div className="home-grid-01__text" style={{
           padding: '72px 48px',
           display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
         }}>
@@ -144,16 +140,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* right: image */}
-        <div style={{
-          background: `url('/assets/img/70429e21-b4ce-4062-8a49-ef9dbe1b17d0.jpg') center/cover`,
+        <div className="home-grid-01__img" style={{
+          background: `url('/assets/img/f49c3e93-58d3-4954-a07b-30719d7f6c9d.jpg') center/cover`,
           filter: 'brightness(0.68) sepia(0.1)',
           minHeight: 480,
         }} />
       </section>
 
       {/* ── 02  SPACES WE SHAPE ── */}
-      <section style={{ padding: '72px 48px', borderTop: `1px solid ${BORDER}` }}>
+      <section className="home-section-02" style={{ padding: '72px 48px', borderTop: `1px solid ${BORDER}` }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 32 }}>
           {sectionNum('02')}
           <span style={{ fontFamily: TMR, fontWeight: 600, fontSize: '0.62rem', letterSpacing: '0.2em', color: INK, opacity: 0.5 }}>
@@ -171,7 +166,7 @@ export default function Home() {
           SPACES WE SHAPE
         </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+        <div className="home-grid-02">
           {PROJECTS.map(({ img, label, to }) => (
             <Link key={label} to={to} style={{ textDecoration: 'none', color: INK }}>
               <div style={{
@@ -193,10 +188,9 @@ export default function Home() {
       </section>
 
       {/* ── 03  ONE ELEMENT. TWO FUNCTIONS. ── */}
-      <section style={{ borderTop: `1px solid ${BORDER}`, overflow: 'hidden' }}>
+      <section className="home-section-03" style={{ borderTop: `1px solid ${BORDER}`, overflow: 'hidden' }}>
 
-        {/* full-width top bar */}
-        <div style={{
+        <div className="home-section-03__bar" style={{
           display: 'flex', justifyContent: 'space-between', alignItems: 'center',
           padding: '36px 48px 0',
         }}>
@@ -206,11 +200,9 @@ export default function Home() {
           </span>
         </div>
 
-        {/* body: specs column | heading + image */}
-        <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', alignItems: 'start' }}>
+        <div className="home-grid-03">
 
-          {/* LEFT — specs as 2-column table */}
-          <div style={{ padding: '48px 24px 64px 48px', alignSelf: 'center' }}>
+          <div className="home-grid-03__specs" style={{ padding: '48px 24px 64px 48px', alignSelf: 'center' }}>
             {SPECS.map(([k, v]) => (
               <div key={k} style={{
                 display: 'grid', gridTemplateColumns: '1fr 1fr',
@@ -225,9 +217,8 @@ export default function Home() {
             ))}
           </div>
 
-          {/* RIGHT — heading + full-bleed image */}
-          <div style={{ paddingBottom: 72 }}>
-            <h2 style={{
+          <div className="home-grid-03__content" style={{ paddingBottom: 72 }}>
+            <h2 className="home-grid-03__heading" style={{
               fontFamily: BEBAS, fontWeight: 400,
               fontSize: 'clamp(56px, 7.5vw, 114px)',
               lineHeight: 0.88, letterSpacing: '0.02em',
@@ -253,14 +244,9 @@ export default function Home() {
       </section>
 
       {/* ── 04 + 05  MATERIAL MATTERS / FROM CONCEPT TO INSTALLATION ── */}
-      <section style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 0.65fr 1.1fr',
-        borderTop: `1px solid ${BORDER}`,
-        minHeight: 580,
-      }}>
-        {/* 04 left */}
-        <div style={{
+      <section className="home-grid-0405" style={{ borderTop: `1px solid ${BORDER}` }}>
+
+        <div className="home-grid-0405__left" style={{
           padding: '72px 48px',
           display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
           borderRight: `1px solid ${BORDER}`,
@@ -288,14 +274,13 @@ export default function Home() {
           </div>
         </div>
 
-        {/* center image */}
-        <div style={{
+        <div className="home-grid-0405__img" style={{
           background: `url('/assets/img/projects/Harmonia/Kyoko_3.png') center/cover`,
           filter: 'brightness(0.72) sepia(0.1)',
+          minHeight: 280,
         }} />
 
-        {/* 05 right */}
-        <div style={{
+        <div className="home-grid-0405__right" style={{
           padding: '72px 48px',
           borderLeft: `1px solid ${BORDER}`,
           display: 'flex', flexDirection: 'column',
@@ -333,11 +318,8 @@ export default function Home() {
       </section>
 
       {/* ── LET'S DESIGN ATMOSPHERES THAT LAST. ── */}
-      <section style={{ padding: '80px 48px', borderTop: `1px solid ${BORDER}` }}>
-        <div style={{
-          display: 'grid', gridTemplateColumns: '1fr 1fr',
-          gap: 80, alignItems: 'flex-end',
-        }}>
+      <section className="home-section-cta" style={{ padding: '80px 48px', borderTop: `1px solid ${BORDER}` }}>
+        <div className="home-grid-cta">
           <h2 style={{
             fontFamily: BEBAS, fontWeight: 400,
             fontSize: 'clamp(56px, 8vw, 112px)',

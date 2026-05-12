@@ -1830,3 +1830,90 @@ body {
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--text-dim); border-radius: 2px; }
+
+/* NAV — hide center subtitle on mobile */
+.nav-subtitle { display: flex; }
+@media (max-width: 768px) {
+  .nav-subtitle { display: none; }
+}
+
+/* ============================================================
+   HOME PAGE — RESPONSIVE GRIDS
+   ============================================================ */
+
+/* Section 01 — Silence Is Designed */
+.home-grid-01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 65vh;
+}
+
+/* Section 02 — Spaces We Shape */
+.home-grid-02 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Section 03 — One Element */
+.home-grid-03 {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: start;
+}
+
+/* Section 04+05 — Material + Process */
+.home-grid-0405 {
+  display: grid;
+  grid-template-columns: 1fr 0.65fr 1.1fr;
+  min-height: 580px;
+}
+
+/* CTA — Let's Design */
+.home-grid-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-end;
+}
+
+@media (max-width: 900px) {
+  .home-grid-02 { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+@media (max-width: 768px) {
+  /* Hero */
+  .home-hero { padding: 80px 24px 64px !important; }
+
+  /* 01 */
+  .home-grid-01 { grid-template-columns: 1fr; }
+  .home-grid-01__img { min-height: 300px; order: -1; }
+  .home-grid-01__text { padding: 48px 24px !important; }
+
+  /* 02 */
+  .home-section-02 { padding: 56px 24px !important; }
+  .home-grid-02 { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+  /* 03 */
+  .home-section-03 { overflow: hidden; }
+  .home-section-03__bar { padding: 32px 24px 0 !important; }
+  .home-grid-03 { grid-template-columns: 1fr; }
+  .home-grid-03__specs { padding: 32px 24px !important; }
+  .home-grid-03__content { padding-bottom: 0 !important; }
+  .home-grid-03__heading { padding: 24px 24px 20px !important; font-size: clamp(44px, 11vw, 72px) !important; }
+
+  /* 04+05 */
+  .home-grid-0405 { grid-template-columns: 1fr; min-height: unset; }
+  .home-grid-0405__img { min-height: 280px; order: 1; border-left: none !important; border-right: none !important; }
+  .home-grid-0405__left { border-right: none !important; padding: 48px 24px !important; }
+  .home-grid-0405__right { border-left: none !important; padding: 48px 24px !important; }
+
+  /* CTA */
+  .home-grid-cta { grid-template-columns: 1fr; gap: 36px; }
+  .home-section-cta { padding: 56px 24px !important; }
+}
+
+@media (max-width: 480px) {
+  .home-grid-02 { grid-template-columns: repeat(2, 1fr); }
+  .home-grid-03__heading { font-size: clamp(38px, 10vw, 56px) !important; }
+}

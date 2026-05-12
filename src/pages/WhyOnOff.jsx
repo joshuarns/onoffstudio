@@ -18,7 +18,7 @@ export default function WhyOnOff() {
       <section className="project-hero">
         <div className="project-hero__bg img-why-hero" />
         <div className="project-hero__content">
-          <h1 className="project-hero__title reveal reveal-delay-1">Why onoff<br />studio.</h1>
+          <h1 className="project-hero__title reveal reveal-delay-1">Why onoffstudio.</h1>
         </div>
       </section>
 

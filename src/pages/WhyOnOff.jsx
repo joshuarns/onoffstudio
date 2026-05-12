@@ -26,10 +26,10 @@ export default function WhyOnOff() {
       <section className="section-why" style={{ padding: 'var(--section-y) 0', background: 'var(--bg-2)', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
           <div className="approach-header">
-            <p className="label reveal">Why onoff studio</p>
+            <p className="label reveal">Why onoffstudio</p>
             <h2 className="approach__heading reveal reveal-delay-1">What no other<br />design firm offers.</h2>
             <p className="approach__desc reveal reveal-delay-2">
-              We built onoff studio around the gaps that architects and developers hit when specifying acoustics and lighting as separate disciplines.
+              We built onoffstudio around the gaps that architects and developers hit when specifying acoustics and lighting as separate disciplines.
             </p>
           </div>
           <div className="why-grid">

@@ -23,15 +23,8 @@ export default function Footer() {
     }}>
       {/* Left group */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 40, flexWrap: 'wrap' }}>
-        <Link to="/" style={{
-          fontFamily: '"Inter", sans-serif',
-          fontSize: '1.0rem',
-          letterSpacing: '-0.01em',
-          color: INK,
-          textDecoration: 'none',
-        }}>
-          <strong style={{ fontWeight: 800 }}>onoff</strong>
-          <span style={{ fontWeight: 400 }}> studio</span>
+        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+          <img src="/assets/img/ONOFF LOGO-BLACK.png" alt="onoff studio" style={{ height: 24, display: 'block' }} />
         </Link>
 
         <span style={{
@@ -55,7 +48,7 @@ export default function Footer() {
       {/* Right group */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 32, flexWrap: 'wrap' }}>
         <a
-          href="mailto:hello@onoffstudio.design"
+          href="mailto:info@onoffstudio.design"
           style={{
             fontFamily: TMR, fontWeight: 500,
             fontSize: '0.6rem', letterSpacing: '0.14em',
@@ -64,7 +57,7 @@ export default function Footer() {
             textTransform: 'uppercase',
           }}
         >
-          HELLO@ONOFFSTUDIO.COM
+          INFO@ONOFFSTUDIO.DESIGN
         </a>
 
         <a

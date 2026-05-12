@@ -36,9 +36,8 @@ export default function Nav() {
       }}>
 
         {/* Logo */}
-        <Link to="/" onClick={close} style={{ textDecoration: 'none', color: INK, fontFamily: '"Inter", sans-serif', fontSize: '1.05rem', letterSpacing: '-0.01em' }}>
-          <strong style={{ fontWeight: 800 }}>onoff</strong>
-          <span style={{ fontWeight: 400 }}> studio</span>
+        <Link to="/" onClick={close} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+          <img src="/assets/img/ONOFF LOGO-BLACK.png" alt="onoff studio" style={{ height: 28, display: 'block' }} />
         </Link>
 
         {/* Center: ARCHITECTURAL LIGHTING • ACOUSTIC DESIGN */}

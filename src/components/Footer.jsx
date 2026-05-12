@@ -24,7 +24,7 @@ export default function Footer() {
       {/* Left group */}
       <div style={{ display: 'flex', alignItems: 'center', gap: 40, flexWrap: 'wrap' }}>
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-          <img src="/assets/img/ONOFF LOGO-BLACK.png" alt="onoffstudio" style={{ height: 20, display: 'block' }} />
+          <img src="/assets/img/ONOFF LOGO-BLACK.png" alt="onoffstudio" style={{ height: 17, display: 'block' }} />
         </Link>
 
         <span style={{

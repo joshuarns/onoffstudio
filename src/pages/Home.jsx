@@ -236,7 +236,7 @@ export default function Home() {
               src="/assets/img/panel-acustico.png"
               alt="Acoustic lighting panel"
               loading="lazy"
-              style={{ width: '100%', display: 'block' }}
+              className="home-panel-img"
             />
           </div>
 

@@ -1831,6 +1831,12 @@ body {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--text-dim); border-radius: 2px; }
 
+/* PANEL IMAGE — responsive size */
+.home-panel-img { width: 95%; display: block; }
+@media (max-width: 768px) {
+  .home-panel-img { width: 100%; }
+}
+
 /* NAV — hide center subtitle on mobile */
 .nav-subtitle { display: flex; }
 @media (max-width: 768px) {

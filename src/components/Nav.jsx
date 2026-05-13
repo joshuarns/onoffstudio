@@ -37,7 +37,7 @@ export default function Nav() {
 
         {/* Logo */}
         <Link to="/" onClick={close} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-          <img src="/assets/img/logo-onoff-labs-black.png" alt="onoffstudio" style={{ height: 25, display: 'block' }} />
+          <img src="/assets/img/onoff-lab-black.png" alt="onoffstudio" style={{ height: 25, display: 'block' }} />
         </Link>
 
         {/* Center: ARCHITECTURAL LIGHTING • ACOUSTIC DESIGN */}

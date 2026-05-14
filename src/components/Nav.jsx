@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 const INK   = '#1A1713'
 const BROWN = '#8B6B3D'
 const CREAM = 'rgb(236, 233, 228)'
+const DARK  = '#0f0f0f'
+const LIGHT = '#ede8e1'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen]         = useState(false)
+  const location                = useLocation()
+  const isHome                  = location.pathname === '/'
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -20,7 +24,17 @@ export default function Nav() {
     document.body.style.overflow = open ? 'hidden' : ''
   }, [open])
 
+  // close menu on route change
+  useEffect(() => { setOpen(false) }, [location.pathname])
+
   const close = () => setOpen(false)
+
+  // Colors depend on page context
+  const navBg     = isHome ? (scrolled ? CREAM : 'transparent') : DARK
+  const navBorder = isHome ? (scrolled ? `1px solid rgba(26,23,19,0.1)` : 'none') : `1px solid rgba(255,255,255,0.06)`
+  const textColor = isHome ? INK : LIGHT
+  const dotColor  = isHome ? INK : LIGHT
+  const logoSrc   = isHome ? '/assets/img/onoff-lab-black.png' : '/assets/img/ONOFF LOGO-WHITE.png'
 
   return (
     <>
@@ -30,14 +44,14 @@ export default function Nav() {
         height: 68,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '0 32px',
-        background: scrolled ? CREAM : 'transparent',
-        borderBottom: scrolled ? `1px solid rgba(26,23,19,0.1)` : 'none',
+        background: navBg,
+        borderBottom: navBorder,
         transition: 'background 0.35s, border-color 0.35s',
       }}>
 
         {/* Logo */}
         <Link to="/" onClick={close} style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-          <img src="/assets/img/onoff-lab-black.png" alt="onoffstudio" style={{ height: 25, display: 'block' }} />
+          <img src={logoSrc} alt="onoffstudio" style={{ height: 25, display: 'block' }} />
         </Link>
 
         {/* Center: ARCHITECTURAL LIGHTING • ACOUSTIC DESIGN */}
@@ -45,16 +59,16 @@ export default function Nav() {
           position: 'absolute', left: '50%', transform: 'translateX(-50%)',
           alignItems: 'center', gap: 10,
           fontFamily: '"Tomorrow", sans-serif', fontWeight: 600,
-          fontSize: '0.72rem', letterSpacing: '0.2em', color: INK, opacity: 0.5,
+          fontSize: '0.72rem', letterSpacing: '0.2em', color: textColor, opacity: 0.5,
         }}>
           <span>ARCHITECTURAL LIGHTING</span>
-          <span style={{ width: 5, height: 5, borderRadius: '50%', background: INK, opacity: 0.6, display: 'inline-block' }} />
+          <span style={{ width: 5, height: 5, borderRadius: '50%', background: dotColor, opacity: 0.6, display: 'inline-block' }} />
           <span>ACOUSTIC DESIGN</span>
         </div>
 
         {/* Right: MENU + circle button */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{ fontFamily: '"Tomorrow", sans-serif', fontWeight: 600, fontSize: '0.65rem', letterSpacing: '0.2em', color: INK, opacity: 0.55 }}>
+          <span style={{ fontFamily: '"Tomorrow", sans-serif', fontWeight: 600, fontSize: '0.65rem', letterSpacing: '0.2em', color: textColor, opacity: 0.55 }}>
             MENU
           </span>
           <button

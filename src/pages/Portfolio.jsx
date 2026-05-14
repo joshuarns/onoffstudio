@@ -48,11 +48,14 @@ export default function Portfolio() {
                 style={{ textDecoration: 'none' }}
               >
                 <div style={{
-                  aspectRatio: '4/3',
-                  background: `url('${p.img}') center/cover`,
-                  filter: 'brightness(0.82)',
-                  transition: 'filter 0.4s ease, transform 0.4s ease',
                   width: '100%',
+                  aspectRatio: '4/3',
+                  backgroundImage: `url('${p.img}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  filter: 'brightness(0.82)',
+                  transition: 'filter 0.4s ease',
                 }}
                   onMouseEnter={e => e.currentTarget.style.filter = 'brightness(1)'}
                   onMouseLeave={e => e.currentTarget.style.filter = 'brightness(0.82)'}

@@ -34,7 +34,7 @@ export default function Nav() {
   const navBorder = isHome ? (scrolled ? `1px solid rgba(26,23,19,0.1)` : 'none') : `1px solid rgba(255,255,255,0.06)`
   const textColor = isHome ? INK : LIGHT
   const dotColor  = isHome ? INK : LIGHT
-  const logoSrc   = isHome ? '/assets/img/onoff-lab-black.png' : '/assets/img/ONOFF LOGO-WHITE.png'
+  const logoSrc   = isHome ? '/assets/img/onoff-lab-black.png' : '/assets/img/onoff-lab-white.png'
 
   return (
     <>

@@ -12,9 +12,9 @@
   --bg-3:         #141414;
   --bg-card:      #111111;
 
-  --text:         #ffffff;
-  --text-muted:   rgba(255, 255, 255, 0.65);
-  --text-dim:     rgba(255, 255, 255, 0.35);
+  --text:         #ede8e1;
+  --text-muted:   #6b665f;
+  --text-dim:     #3d3a36;
 
   --border:       rgba(255, 255, 255, 0.07);
   --border-warm:  rgba(200, 160, 90, 0.15);
